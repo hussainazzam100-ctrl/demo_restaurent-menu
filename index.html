@@ -3,22 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Lagoon Bites — Fresh Maldivian & International Cuisine">
+    <title>Lagoon Bites | Fresh Flavours, Island Vibes</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1> Azzam </h1>
-    <br>
-    <p> I am the Goat and I know it </p><br>
-    <h2>Hobbies </h2>
-    <ul><b>Gaming</b></ul>
-    <ul><i>Watching Movies and Series</i></ul>
-    <ul><u>Read Novels</u></ul>
-    <ul><s>Doomscrolling</s></ul>
-    <ul><mark>Aura Farming</mark></ul>
-    <ul><em>Cat petting </em></ul>
 
+<header class="site-header">
+    <a href="#home" class="brand">
+        <span class="brand-mark">⌁</span>
+        <span>Lagoon Bites</span>
+    </a>
 
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    
+    <a href="#menu" class="header-btn">View Menu <span>→</span></a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-shape hero-shape-one"></div>
+        <div class="hero-shape hero-shape-two"></div>
+
+        <div class="hero-content">
+            <p class="eyebrow">TASTE THE ISLAND</p>
+            <h1>Lagoon Bites</h1>
+            <p class="hero-subtitle">Fresh Maldivian &amp; International Cuisine</p>
+            <span class="gold-line"></span>
+            <p class="hero-description">
+                Exceptional flavours, fresh ingredients and a dining experience by the ocean.
+            </p>
+            <a href="#menu" class="primary-btn">View Menu <span>→</span></a>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="section-heading">
+            <p class="eyebrow">OUR MENU</p>
+            <h2>Fresh Flavours, Island Vibes</h2>
+            <span class="gold-line"></span>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Menu categories">
+            <button class="category-btn active" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="main-dishes">Main Dishes</button>
+            <button class="category-btn" data-category="drinks">Drinks</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <!-- JavaScript inserts menu cards here -->
+        </div>
+    </section>
+
+    <section class="about-strip" id="about">
+        <div class="about-card">
+            <span class="about-icon">✦</span>
+            <h3>Fresh Ingredients</h3>
+            <p>Locally inspired dishes made with carefully selected ingredients.</p>
+        </div>
+        <div class="about-card">
+            <span class="about-icon">⌁</span>
+            <h3>Island Flavours</h3>
+            <p>A relaxed blend of Maldivian favourites and international cuisine.</p>
+        </div>
+        <div class="about-card">
+            <span class="about-icon">♡</span>
+            <h3>Made With Care</h3>
+            <p>Good food, warm service and an experience worth coming back for.</p>
+        </div>
+    </section>
+
+    <section class="visit-section" id="contact">
+        <div class="visit-copy">
+            <p class="eyebrow">VISIT US</p>
+            <h2>Dine by the Ocean</h2>
+            <p class="visit-description">Experience the true taste of Maldives.</p>
+
+            <div class="contact-list">
+                <div class="contact-item">
+                    <span class="contact-icon">⌖</span>
+                    <div>
+                        <strong>Hulhumale, Maldives</strong>
+                        <span>Lot 102, Beach Road</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">☎</span>
+                    <div>
+                        <strong>+960 779 1234</strong>
+                        <span>Mon - Sun · 11:00 AM - 11:00 PM</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">◷</span>
+                    <div>
+                        <strong>Opening Hours</strong>
+                        <span>Daily · 11:00 AM - 11:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-column">
+            <div class="map-placeholder">
+                <span class="map-pin">●</span>
+                <strong>Map Placeholder</strong>
+                <small>Google Maps will appear here</small>
+            </div>
+            <a class="secondary-btn" href="https://www.google.com/maps" target="_blank" rel="noopener">
+                ⌖ &nbsp; Get Directions
+            </a>
+        </div>
+
+        <div class="qr-card">
+            <div class="qr-placeholder" aria-label="QR code placeholder">
+                <span>▦</span>
+            </div>
+            <h3>Scan for Our Menu</h3>
+            <p>Quick and easy access to our full menu.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-brand">
+        <a href="#home" class="brand footer-logo">
+            <span class="brand-mark">⌁</span>
+            <span>Lagoon Bites</span>
+        </a>
+        <p>Fresh Maldivian &amp; International Cuisine</p>
+    </div>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <small>© 2026 Lagoon Bites. All rights reserved.</small>
+    </div>
+
+    <div class="social-links" aria-label="Social links">
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="TikTok">♪</a>
+    </div>
+</footer>
+
+<script src="index.js"></script>
 </body>
 </html>
